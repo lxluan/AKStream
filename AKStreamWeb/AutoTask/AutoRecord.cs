@@ -374,7 +374,8 @@ namespace AKStreamWeb.AutoTask
                                                 fileDateList = new List<string>();
                                             }
 
-                                            var inRange = CheckTimeRange(recordPlan);
+                                            // var inRange = CheckTimeRange(recordPlan);
+                                            var inRange = true; // 持续录制
                                             bool stopIt = false;
                                             if (!inRange)
                                             {
@@ -573,7 +574,7 @@ namespace AKStreamWeb.AutoTask
                 }
 
 
-                Thread.Sleep(10000);
+                Thread.Sleep(100000);
             }
         }
     }

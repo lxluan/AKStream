@@ -661,8 +661,8 @@ namespace AKStreamKeeper
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
         {
             _timerCount++;
-            GCommon.Logger.Debug(
-                $"[{LoggerHead}]->Common.OnTimedEvent运行中...({_timerCount})");
+            // GCommon.Logger.Debug(
+            //    $"[{LoggerHead}]->Common.OnTimedEvent运行中...({_timerCount})");
             TimeSpan ts = DateTime.Now.Subtract(StartupDateTime);
 
             if (MediaServerInstance == null || !MediaServerInstance.IsRunning)

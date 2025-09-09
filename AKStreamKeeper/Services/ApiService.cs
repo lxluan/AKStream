@@ -748,7 +748,7 @@ namespace AKStreamKeeper.Services
                 Message = ErrorMessage.ErrorDic![ErrorNumber.None],
             };
             var found = File.Exists(filePath);
-            GCommon.Logger.Debug($"[{Common.LoggerHead}]->检查文件是否存在:{filePath}:{found}");
+            // GCommon.Logger.Debug($"[{Common.LoggerHead}]->检查文件是否存在:{filePath}:{found}");
             return found;
         }
 

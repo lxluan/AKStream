@@ -5704,8 +5704,8 @@ namespace AKStreamWeb.Services
                 return null;
             }
 
-            GCommon.Logger.Debug(
-                $"[{Common.LoggerHead}]->检查流媒体服务器状态成功->{mediaServerId}->{JsonHelper.ToJson(mediaServer)}");
+            //GCommon.Logger.Debug(
+            //    $"[{Common.LoggerHead}]->检查流媒体服务器状态成功->{mediaServerId}->{JsonHelper.ToJson(mediaServer)}");
             return mediaServer;
         }
     }
