@@ -111,6 +111,7 @@ namespace AKStreamWeb.AutoTask
             DeleteOrphanDataDir.DataDir dir;
             while (true)
             {
+                Thread.Sleep(3600000);
                 i++;
                 dir = UtilsHelper.IsOdd(i) ? (DeleteOrphanDataDir.DataDir.MySql) : (DeleteOrphanDataDir.DataDir.Disk);
                 switch (dir)
@@ -325,7 +326,7 @@ namespace AKStreamWeb.AutoTask
                     Thread.Sleep(1000);
                 }
 
-                Thread.Sleep(10000);
+                
             }
         }
 

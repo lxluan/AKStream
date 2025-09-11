@@ -70,7 +70,7 @@ public class DiskUseableChecker
                 GCommon.Logger.Error($"[{Common.LoggerHead}]->执行磁盘挂载检测时出现异常->{ex.Message}\r\n{ex.StackTrace}");
             }
 
-            Thread.Sleep(5000);
+            Thread.Sleep(300000);
         }
     }
 }
